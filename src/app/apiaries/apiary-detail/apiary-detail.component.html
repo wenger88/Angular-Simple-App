@@ -1,0 +1,18 @@
+
+<div class="container">
+  <div class="row">
+
+    <p>Name: {{selectedApiary.name}}</p>
+    <p>Description: {{selectedApiary.description}}</p>
+    <p>Location: {{selectedApiary.location}}</p>
+    <p>Number of hives: {{selectedApiary.hives.length}}</p>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let hive of selectedApiary.hives">
+        <p>Name: {{hive.name}}</p>
+        <p>Type: {{hive.type}}</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+

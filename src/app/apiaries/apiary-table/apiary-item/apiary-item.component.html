@@ -1,0 +1,11 @@
+
+  <th scope="row">{{apiaryId + 1}}</th>
+  <td>{{apiary.name}}</td>
+  <td>{{apiary.hives.length}}</td>
+  <td>{{apiary.location}}</td>
+  <td>
+    <a class="btn btn-primary btn-block" [routerLink]="apiaryId">View</a>
+    <a class="btn btn-warning  btn-block" (click)="onEdit()" >Edit</a>
+    <a class="btn btn-danger  btn-block" (click)="onDelete()">Delete</a>
+  </td>
+

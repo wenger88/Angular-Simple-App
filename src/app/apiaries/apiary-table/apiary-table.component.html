@@ -1,0 +1,24 @@
+
+<div class="container">
+
+  <div class="row">
+    <div class="dashboard">
+     <a class="btn btn-outline-primary" [routerLink]="['new']">Add New Apiary</a>
+      <table class="table table-hover table-inverse">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Number of Hives</th>
+          <th>Location</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr apiary-item *ngFor="let apiary of apiaries; let i = index" [apiary]="apiary" [apiaryId]="i"></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
